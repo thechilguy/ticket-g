@@ -10,10 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.0.1",
     "classnames": "^2.5.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "sass": "^1.89.1"
+    "react-hook-form": "^7.56.4",
+    "react-hooks-yup-form": "^0.1.5",
+    "react-router-dom": "^7.6.1",
+    "sass": "^1.89.1",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
