@@ -91,7 +91,6 @@ export default function Upload() {
           </div>
         )}
 
-        {/* 👉 Цей input має бути завжди у DOM */}
         <input
           type="file"
           accept="image/jpeg, image/png"
