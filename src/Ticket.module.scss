@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("./assets/font/Inconsolata.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ticket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+  font-family: "MyFont", sans-serif;
+  color: #fff;
+
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+
+    h1 {
+      margin: 0;
+    }
+  }
+
+  p {
+    font-size: 1.25rem;
+    color: rgb(206, 206, 206);
+    margin: 0.3rem 0;
+  }
+}
+
+.description {
+  margin-bottom: 2rem;
+
+  span {
+    color: #cf7d65;
+  }
+}
+
+.logo {
+  width: 40px;
+}
+
+.ticketContainer {
+  background-image: url("./assets/image/pattern-ticket.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  max-width: 540px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.2rem;
+  position: relative;
+
+  .date {
+    margin-left: 3.1rem;
+    font-size: 1rem;
+  }
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6rem;
+}
+
+.logoText {
+  display: flex;
+  align-items: center;
+
+  .headerText {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+  }
+}
+
+.avatarContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.avatarImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  margin-right: 1rem;
+}
+
+.avatarText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+
+  .github {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 16px;
+      height: 16px;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.ticketNumber {
+  position: absolute;
+  right: 1.1rem;
+  top: 39%;
+  transform: rotate(-90deg) translateY(50%);
+  transform-origin: center;
+  color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 2px;
+
+  p {
+    font-size: 2rem;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ticket {
+    .title h1 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .ticketContainer {
+    max-width: 90%;
+    height: auto;
+    padding: 1rem;
+    .date {
+      margin-left: 1.7rem;
+    }
+  }
+
+  .logo {
+    width: 20px;
+  }
+
+  .logoText .headerText {
+    font-size: 1.2rem;
+  }
+  .logoContainer {
+    margin-bottom: 1.8rem;
+  }
+
+  .avatarImage {
+    width: 40px;
+    height: 40px;
+  }
+
+  .avatarText .name {
+    font-size: 1rem;
+  }
+
+  .ticketNumber {
+    right: 0.5rem;
+    top: 40%;
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}

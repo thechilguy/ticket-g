@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("./assets//font/Inconsolata-VariableFont_wdth\,wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.title {
+  font-family: "MyFont", sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+
+  p {
+    font-size: 1.2rem;
+    font-weight: medium;
+    font-family: "MyFont", sans-serif;
+    color: rgb(224, 224, 224);
+    margin-top: 0.5rem;
+  }
+}
+@media (max-width: 460px) {
+  .title {
+    font-size: 1rem;
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
